@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-example-springboot</artifactId>
+        <groupId>org.daijie</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spring-example-springboot-orm</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>spring-example-springboot-orm-mybatis</module>
+        <module>spring-example-springboot-orm-tkmybatis</module>
+        <module>spring-example-springboot-orm-mybatisplus</module>
+    </modules>
+
+
+</project>

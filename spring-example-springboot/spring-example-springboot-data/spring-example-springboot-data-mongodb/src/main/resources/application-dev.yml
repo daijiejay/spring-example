@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    mongodb:
+      url: mongodb://127.0.0.1:20000/demo
+
+logging:
+  level:
+    org:
+      daijie:
+        springboot : debug
