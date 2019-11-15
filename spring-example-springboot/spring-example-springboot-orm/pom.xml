@@ -15,6 +15,7 @@
         <module>spring-example-springboot-orm-mybatis</module>
         <module>spring-example-springboot-orm-tkmybatis</module>
         <module>spring-example-springboot-orm-mybatisplus</module>
+        <module>spring-example-springboot-orm-daijiejdbc</module>
     </modules>
 
 

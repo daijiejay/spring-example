@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-example-springboot-orm</artifactId>
+        <groupId>org.daijie</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spring-example-springboot-orm-daijiejdbc</artifactId>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <daijie.version>2.0.0</daijie.version>
+        <spring.boot.version>2.1.3.RELEASE</spring.boot.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.daijie</groupId>
+            <artifactId>daijie-jdbc-spring-boot-starter</artifactId>
+            <version>${daijie.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.daijie</groupId>
+                <artifactId>daijie-jdbc-plugin</artifactId>
+                <version>${daijie.version}</version>
+                <configuration>
+                    <datasources>
+                        <datasource>
+                            <driverClassName>com.mysql.jdbc.Driver</driverClassName>
+                            <url>jdbc:mysql://10.13.10.104:3306/test11?useUnicode=true&amp;characterEncoding=UTF8</url>
+                            <username>root</username>
+                            <password>Shiji@2018</password>
+                        </datasource>
+                    </datasources>
+                    <model>
+                        <!--自定义model生成规则的指定类-->
+                        <!--<modeConfigurationClass></modeConfigurationClass>-->
+                        <targetPackage>org.daijie.springboot.orm.daijiejdbc.model</targetPackage>
+                        <targetProject>src/main/java</targetProject>
+                        <isOverrideToString>true</isOverrideToString>
+                        <isOverrideEquats>true</isOverrideEquats>
+                        <isLombok>false</isLombok>
+                        <isSerializeble>true</isSerializeble>
+                    </model>
+                    <mapper>
+                        <!--自定义mapper生成规则的指定类-->
+                        <!--<mapperConfigurationClass></mapperConfigurationClass>-->
+                        <targetPackage>org.daijie.springboot.orm.daijiejdbc.mapper</targetPackage>
+                        <targetProject>src/main/java</targetProject>
+                        <interfacePackages>
+                            <interfacePackage>org.daijie.jdbc.session.SessionMapper</interfacePackage>
+                        </interfacePackages>
+                    </mapper>
+                    <path>C://Users/daijie/Desktop/work/</path>
+                    <fileName>doc</fileName>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
