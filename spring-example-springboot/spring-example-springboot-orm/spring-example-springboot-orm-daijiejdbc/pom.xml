@@ -25,6 +25,11 @@
             <artifactId>daijie-jdbc-spring-boot-starter</artifactId>
             <version>${daijie.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
