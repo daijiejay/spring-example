@@ -18,7 +18,7 @@
         <spring.boot.version>2.1.3.RELEASE</spring.boot.version>
         <spring.boot.mybatis.version>2.0.0</spring.boot.mybatis.version>
         <baomidou.mybatis.plus.version>3.1.0</baomidou.mybatis.plus.version>
-        <mysql.connector.version>8.0.15</mysql.connector.version>
+        <mysql.connector.version>8.0.28</mysql.connector.version>
         <mybatis.generator.version>1.3.6</mybatis.generator.version>
         <spring.boot.github.pagehelper.version>1.2.10</spring.boot.github.pagehelper.version>
         <lombok.version>1.18.6</lombok.version>
